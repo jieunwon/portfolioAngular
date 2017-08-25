@@ -1,0 +1,155 @@
+.cbp-so-scroller {
+	/*overflow: hidden;*/
+	padding-top: 20px;
+	height: 100%;
+	width: 100%;
+
+}
+
+
+figure {
+	margin: 0;
+	position: relative;
+
+}
+
+
+
+img {
+	/*-webkit-filter: none;
+	filter: none;*/
+	border: 1px #eee solid;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	width: 100%;
+}
+
+
+figure img:hover {
+	/*-webkit-filter: opacity(.2);
+  	filter: opacity(.2);*/
+	-webkit-filter: none;
+	filter: none;
+	/*border: 10px solid #00ad82;*/
+	-webkit-transition: all 0.1s linear;
+       -moz-transition: all 0.1s linear;
+        -ms-transition: all 0.1s linear;
+         -o-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+}
+
+
+.cbp-so-section h2 {
+	font-size: 3em;
+	font-weight: 300;
+	line-height: 1;
+}
+
+.cbp-so-section p {
+	color: #000;
+	font-size: 1.4em;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+}
+
+/* Sides */
+.cbp-so-section {
+	float: left;
+	/*margin: 0;*/
+	padding-top: 8%;
+	margin-bottom: 50px;
+	/*padding-top: 13px;
+	/*padding: 3em 4%;*/
+	/*overflow: hidden;*/
+	/*min-height: 12em;*/
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.cbp-so-section:nth-child(1) p:first-child {
+	/*margin-bottom: 20px;	*/
+}
+
+
+
+
+.cbp-so-section .cbp-so-side .description {
+	/*border: 3px solid red;*/
+	/*display: none;*/
+	/*height: 100px;*/
+    opacity: 0;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    z-index: 18888;
+}
+
+.cbp-so-section figure.cbp-so-side:hover .description {
+	/*border: 3px solid red;*/
+	opacity: 1;
+}
+
+.cbp-so-section figure.cbp-so-side:hover .description i {
+	font-size: 3em;
+}
+
+.cbp-so-section p:first-child {
+	/*border-bottom: 1px solid #00F8BD;*/
+	color: #3A696F;
+	font-size: 1em;
+	letter-spacing: 0.03em;
+}
+
+.cbp-so-section:last-child p:first-child {
+	margin-top: 30px;
+}
+
+
+@media screen and (max-width: 73.5em) {
+	.cbp-so-scroller {
+		font-size: 65%;
+		/*margin-top: 20px; */
+	}
+
+	.cbp-so-section h2 {
+		margin: 0;
+	}
+
+	.cbp-so-section p:first-child {
+		font-size: 1em;
+		letter-spacing: 0.03em;
+	}
+
+	.cbp-so-side img {
+		/*max-width: 120%;*/
+	}
+
+	figure {
+		/*margin: 5%;*/
+	}
+}
+
+@media screen and (max-width: 41.125em) {
+	.cbp-so-scroller {
+		margin-top: 50px;
+	}
+	.cbp-so-section {
+		float: none;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	.cbp-so-section p {
+		margin-left: 0;
+	}
+	.for_nav {
+		height: 5px;
+	}
+	.sticky {
+		display: none;
+	}
+
+}
